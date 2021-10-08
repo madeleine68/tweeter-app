@@ -1,0 +1,12 @@
+header.avatar {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("/images/foggy-birds.png"), silver ;
+    z-index: 1;
+  }
+  
+  .avatar h1 {
+    color: #800020;
+  }

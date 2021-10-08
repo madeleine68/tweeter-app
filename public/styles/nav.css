@@ -1,0 +1,39 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Bungee', cursive;
+  height: 80px;
+  width: 100vw;
+  color:white;
+  background-color:#4056A1;
+  padding: 0 1.5em;
+  position: fixed;
+  z-index: 2;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+  }
+  
+  .write-tweet {
+    flex-direction: column;
+  }
+  
+  .write-tweet:hover {
+    cursor: grabbing;
+  }
+  
+  .write-tweet i {
+    color: red;
+    text-align: center;
+    width: 100%;
+  }
+  
+  #write {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  .fa-angle-double-down {
+    position: relative;
+  }
