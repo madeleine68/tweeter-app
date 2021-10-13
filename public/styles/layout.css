@@ -30,7 +30,7 @@ body {
 
 @media only screen and (min-width: 420px) {
   body {
-    font-size: 16px;
+    font-size: 20px;
     display: flex;
     flex-direction: column;
   }
@@ -43,18 +43,61 @@ body {
     align-items: stretch;
   }
   
-  section.new-tweet, article.old-tweet {
+  section.new-tweet {
     margin: 0 4em 2em 4em;
+    display:flex;
+    flex-direction: column;
+  }
+  article.old-tweet {
+    margin: 0 4em 2em 4em;
+    display:flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #244751;
+    padding: 0.4em;
+  }
+  article.old-tweet:hover {
+    box-shadow: 3px 4px 8px 2px #a6a6a6;
   }
 
+  header.old-tweet,footer.old-tweet{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  p.old-tweet{
+    border-style: none;
+    border-bottom: solid;
+    border-color: #244751;
+  }
+ 
+  .header-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-right {
+    color: lightgrey;
+  }
+  footer.old-tweet {
+    font-size: 12px;
+  }
+  .footer-right i:hover {
+    color: #33CC33;
+  }
   nav {
-    background: silver;    
+    background: silver;
+    position: sticky;    
   }
 }
 
 @media only screen and (min-width: 1024px) {
   body {
-    font-size: 21px;
+    font-size: 22px;
     flex-direction: row;
   }
 
@@ -70,11 +113,55 @@ body {
     margin-right: 2em;
   }
 
-  section.new-tweet, article.old-tweet {
-    margin: 0 0 2em 0;
+  section.new-tweet {
+    margin: 0 4em 2em 4em;
+    display:flex;
+    flex-direction: column;
+  }
+  article.old-tweet {
+    margin: 0 4em 2em 4em;
+    display:flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #244751;
+    padding: 0.4em;
+  }
+  article.old-tweet:hover {
+    box-shadow: 3px 4px 8px 2px #a6a6a6;
   }
 
+  header.old-tweet,footer.old-tweet{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  p.old-tweet{
+    border-style: none;
+    border-bottom: solid;
+    border-color: #244751;
+  }
+ 
+  .header-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-right {
+    color: lightgrey;
+  }
+  footer.old-tweet {
+    font-size: 14px;
+  }
+  
+  .footer-right i:hover {
+    color: #33CC33;
+  }
   nav {
-    background: grey;
+    background: silver;  
+    position: fixed;  
   }
 };

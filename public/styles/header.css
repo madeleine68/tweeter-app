@@ -3,6 +3,7 @@ header.avatar {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background: url("/images/foggy-birds.png"), silver ;
     z-index: 1;
   }
